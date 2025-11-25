@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+      html { scroll-behavior: smooth; }
+      .nav-section { display: none; }
+      .nav-section.active { display: block; }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#" onclick="showSection('inicio'); return false;">El Meu Projecte</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" onclick="showSection('inicio'); return false;">Inici</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showSection('projectes'); return false;">Projectes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showSection('contacte'); return false;">Contacte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="nav-section active">
+      <div class="container my-5">
+        <h1>Bienvenido a Mi Proyecto</h1>
+        <p class="lead">Esta es la página de inicio. Aquí puedes encontrar información general sobre el proyecto.</p>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <h5 class="card-title">📋 Mis Proyectos</h5>
+                <p class="card-text">Explora todos los proyectos en los que he trabajado.</p>
+                <button onclick="showSection('projectes')" class="btn btn-primary">Ver Proyectos</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <h5 class="card-title">📧 Contacto</h5>
+                <p class="card-text">¿Tienes una pregunta? Contáctame directamente.</p>
+                <button onclick="showSection('contacte')" class="btn btn-primary">Ir a Contacto</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow">
+              <div class="card-body">
+                <h5 class="card-title">⭐ Acerca de</h5>
+                <p class="card-text">Información sobre mí y mi experiencia profesional.</p>
+                <button class="btn btn-primary" disabled>Próximamente</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projectes" class="nav-section">
+      <div class="container my-5">
+        <h1>Mis Proyectos</h1>
+        <p class="lead">A continuación se presentan los proyectos en los que he trabajado.</p>
+
+        <div class="row mt-5 g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 1: Sitio Web</h5>
+                <p class="card-text">Desarrollo de un sitio web responsivo con HTML, CSS y Bootstrap. Incluye navegación dinámica y formularios interactivos.</p>
+                <p><strong>Tecnologías:</strong> HTML5, CSS3, Bootstrap 5, JavaScript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 2: Aplicación Web</h5>
+                <p class="card-text">Aplicación web completa con backend y frontend. Sistema de gestión de datos con base de datos.</p>
+                <p><strong>Tecnologías:</strong> JavaScript, Node.js, Express, MongoDB</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 3: E-Commerce</h5>
+                <p class="card-text">Plataforma de tienda en línea con carrito de compras, pagos y gestión de inventario.</p>
+                <p><strong>Tecnologías:</strong> React, Node.js, Stripe API</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 4: App Móvil</h5>
+                <p class="card-text">Aplicación móvil nativa con interfaz intuitiva y funcionalidades avanzadas.</p>
+                <p><strong>Tecnologías:</strong> React Native, Firebase</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 5: Dashboard</h5>
+                <p class="card-text">Panel de control con gráficos en tiempo real y análisis de datos.</p>
+                <p><strong>Tecnologías:</strong> Vue.js, Chart.js, API REST</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Proyecto 6: Sistema CRM</h5>
+                <p class="card-text">Sistema de gestión de relaciones con clientes con automatización de procesos.</p>
+                <p><strong>Tecnologías:</strong> Python, Django, PostgreSQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <button onclick="showSection('contacte')" class="btn btn-primary btn-lg">¿Interesado? Contáctame</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacte" class="nav-section">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h1 class="text-center mb-4">Contacta Conmigo</h1>
+            <p class="text-center lead mb-5">Estoy disponible para proyectos, consultas o simplemente para charlar. ¡No dudes en ponerte en contacto!</p>
+
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div class="card text-center shadow">
+                  <div class="card-body">
+                    <h5 class="card-title">📧 Email</h5>
+                    <p class="card-text">
+                      <a href="mailto:contacto@miproyecto.com" class="text-decoration-none">contacto@miproyecto.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card text-center shadow">
+                  <div class="card-body">
+                    <h5 class="card-title">📱 Teléfono</h5>
+                    <p class="card-text">
+                      <a href="tel:+34123456789" class="text-decoration-none">+34 123 456 789</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-lg p-5">
+              <h2 class="mb-4">Formulario de Contacto</h2>
+              <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Teléfono (Opcional)</label>
+                  <input type="tel" class="form-control" id="telefono" name="telefono">
+                </div>
+
+                <div class="mb-3">
+                  <label for="asunto" class="form-label">Asunto</label>
+                  <input type="text" class="form-control" id="asunto" name="asunto" required>
+                </div>
+
+                <div class="mb-4">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensaje</button>
+              </form>
+            </div>
+
+            <div class="mt-5 text-center">
+              <h3>Sígueme en Redes Sociales</h3>
+              <div class="mt-3">
+                <a href="#" class="btn btn-outline-primary btn-sm mx-2">LinkedIn</a>
+                <a href="#" class="btn btn-outline-dark btn-sm mx-2">GitHub</a>
+                <a href="#" class="btn btn-outline-info btn-sm mx-2">Twitter</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <p>&copy; 2025 Mi Proyecto. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!-- Script para cambiar entre secciones -->
+    <script>
+      function showSection(sectionId) {
+        // Ocultar todas las secciones
+        const sections = document.querySelectorAll('.nav-section');
+        sections.forEach(section => {
+          section.classList.remove('active');
+        });
+
+        // Mostrar la sección seleccionada
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+          selectedSection.classList.add('active');
+        }
+
+        // Actualizar el menú activo
+        const navLinks = document.querySelectorAll('.navbar .nav-link');
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+
+        // Añadir clase active al enlace correspondiente
+        const activeLink = document.querySelector(`.navbar a[onclick="showSection('${sectionId}'); return false;"]`);
+        if (activeLink) {
+          activeLink.classList.add('active');
+        }
+
+        // Scroll al inicio de la página
+        window.scrollTo(0, 0);
+      }
+    </script>
+  </body>
+</html>
